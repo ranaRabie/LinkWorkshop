@@ -29,7 +29,8 @@
 
                     <b-nav-item-dropdown left id="notifications-dropdown">
                         <template #button-content>
-                            <span class="header-ico btn btn-sm" v-b-tooltip.hover title="Notifications"><font-awesome-icon icon="bell" /></span>
+                            <!-- <span class="header-ico btn btn-sm" v-b-tooltip.hover title="Notifications"><font-awesome-icon icon="bell" /></span> -->
+                            <span class="header-ico btn btn-sm" v-b-tooltip.hover title="Notifications"><font-awesome-icon :icon="['far', 'bell']"/></span>
                         </template>
                         <span>Recent Notifications</span>
                         <b-dropdown-item href="#" class="notification-item">You have an upcoming appointment today! <span class="text-secondary">Check-in Now</span></b-dropdown-item>
@@ -48,8 +49,8 @@
                             <span class="header-ico btn btn-sm" v-b-tooltip.hover title="Settings"><font-awesome-icon icon="cog" /></span>
                         </template>
                         <span>Language</span>
-                        <div>
-                            <b-dropdown-item href="#">English</b-dropdown-item>
+                        <div class="lang-blk">
+                            <b-dropdown-item href="#" class="active">English <font-awesome-icon icon="check" /></b-dropdown-item>
                             <b-dropdown-item href="#">Arabic</b-dropdown-item>
                         </div>
                         

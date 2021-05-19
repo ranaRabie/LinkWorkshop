@@ -81,6 +81,27 @@ $theme-colors:(
         }
     }
     #notifications-dropdown{
+        .header-ico{
+            position: relative;
+            &:after{
+                content: '';
+                width: 10px;
+                height: 10px;
+                background-color: var(--secondary);
+                border-radius: 50%;
+                position: absolute;
+                top: 8px;
+                right: 6px;
+                display: block!important;
+                border: 1px solid var(--primary);
+            }
+            &:hover{
+                &::after{
+                    background-color: $white;
+                    border-color: var(--secondary);
+                }
+            }
+        }
         > ul{
             min-width: 250px;
             padding-bottom: 0;
@@ -112,6 +133,18 @@ $theme-colors:(
                 border-bottom: 1px solid #eee;
                 &:last-child{
                     border-bottom: 0;
+                }
+                &.lang-blk{
+                    li.active{
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            svg{
+                                color: var(--secondary)
+                            }
+                        }
+                    }
                 }
                 &.font-container{
                     display: flex;
