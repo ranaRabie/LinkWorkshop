@@ -5,17 +5,17 @@
                 <div class="row justify-content-between">
                     <div class="col-md-2">
                         <ul class="list-unstyled">
-                            <li><a href="">News</a></li>
-                            <li><a href="">Events</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Faqs</a></li>
+                            <li><router-link to="/news">News</router-link></li>
+                            <li><router-link to="#">Events</router-link></li>
+                            <li><router-link to="#">About</router-link></li>
+                            <li><router-link to="#">Faqs</router-link></li>
                         </ul>
                     </div>
                     <div class="col-md-2">
                         <ul class="list-unstyled">
-                            <li><a href="">Privacy Policy</a></li>
-                            <li><a href="">Contact Us</a></li>
-                            <li><a href="">Complains</a></li>
+                            <li><router-link to="#">Privacy Policy</router-link></li>
+                            <li><router-link to="#">Contact Us</router-link></li>
+                            <li><router-link to="#">Complains</router-link></li>
                         </ul>
                     </div>
                     <div class="col-md-4">

@@ -16,10 +16,10 @@
             <a class="h3">About us</a>
             <ul>
               <li>
-                <a href="#">Who are us</a>
+                <router-link to="#">Who are us</router-link>
               </li>
               <li>
-                <a href="#">Why us?</a>
+                <router-link to="#">Why us?</router-link>
               </li>
             </ul>
           </li>
@@ -27,10 +27,10 @@
             <a class="h3">News</a>
             <ul>
               <li>
-                <a href="#">News</a>
+                <router-link to="/news">News</router-link>
               </li>
               <li>
-                <a href="#">Events</a>
+                <router-link to="#">Events</router-link>
               </li>
             </ul>
           </li>
@@ -45,10 +45,10 @@
         </ul>
         <ul class="nav-list">
           <li>
-            <a href="#" class="h3">Contact us</a>
+            <router-link to="#" class="h3">Contact us</router-link>
           </li>
           <li>
-            <a href="#" class="h3">Site Map</a>
+            <router-link to="#" class="h3">Site Map</router-link>
           </li>
         </ul>
       </nav>

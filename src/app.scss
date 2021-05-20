@@ -325,6 +325,9 @@ $theme-colors:(
                     > ul > li{
                         a{
                             color: theme-color-level(primary, -7);
+                            &.router-link-exact-active{
+                                color: var(--secondary);
+                            }
                             &:hover{
                                 color: theme-color-level(secondary, -7);
                             }
@@ -471,6 +474,75 @@ $theme-colors:(
                 height: 15px;
                 background-color: $white;
             }
+        }
+    }
+}
+
+// Articles
+.articles-container{
+    .article-card{
+        color: $body-color;
+        text-decoration: none!important;
+        height: calc(100% - 1rem);
+        margin-bottom: 1rem;
+        display: block;
+        .card{
+            height: 100%;
+            padding-bottom: 1.25rem;
+            background-color: $white;
+            box-shadow: 0 0 4px rgba($color: $black, $alpha: 0.15);
+            .card-body{
+                position: relative;
+                .card-actions{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    margin: 0 -0.5rem;
+                    a{
+                        display: block;
+                        margin: 0 .5rem;
+                        color: var(--secondary);
+                        cursor: pointer;
+                        &:hover{
+                            color: var(--primary);
+                        }
+                    }
+                }
+                .card-title{
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    cursor: pointer;
+                    a{
+                        color: $body-color;
+                        text-decoration: none!important;
+                    }
+                }
+                .card-categories{
+                    background-color: #e3e3e3;
+                    display: inline-block;
+                    padding: .2rem .5rem;
+                    border-radius: 5px;
+                    font-size: .8rem;
+                    color: #464646;
+                    margin-bottom: 1rem;
+                }
+                .card-text{
+                    color: #65686e;
+                    font-size: .9rem;
+                }
+                .card-date{
+                    color: #707070;
+                    font-size: .85rem;
+                    font-weight: bold;
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+        }
+        
+        img{
+            height: 150px;
+            object-fit: cover;
         }
     }
 }

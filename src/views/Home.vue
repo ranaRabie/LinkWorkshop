@@ -3,6 +3,7 @@
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <Carousel/>
+    <LatestNews/>
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
 import Carousel from '@/components/Carousel.vue'
+import LatestNews from '@/components/LatestNews.vue'
 
 export default {
   name: 'Home',
   components: {
     // HelloWorld,
-    Carousel
+    Carousel,
+    LatestNews,
   }
 }
 </script>
