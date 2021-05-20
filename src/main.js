@@ -8,8 +8,6 @@ import VueAxios from 'vue-axios'
 
 Vue.use(VueAxios, axios)
 
-
-
 import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
 
 Vue.use(BootstrapVue)

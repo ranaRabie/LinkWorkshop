@@ -84,6 +84,11 @@ export default {
             isShowNav: false, 
         }
     },
+    watch: {
+        '$store.state.isShowSideNav': function() {
+            this.isShowNav = this.$store.state.isShowSideNav;
+        }
+    },
     methods:{
         toggleSideNav(){
             if(this.$store.state.isShowSideNav){

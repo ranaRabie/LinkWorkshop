@@ -5,6 +5,7 @@ $body-color: #111;
 $theme-colors:(
     "primary" : #338997,
     "secondary": #8dc043,
+    "light": #efefef,
 );
 
 // Then import Bootstrap an BootstrapVue SCSS files (order is important)
@@ -478,71 +479,114 @@ $theme-colors:(
     }
 }
 
+// Page Title
+#pg-tit{
+    font-weight: bold;
+    font-size: 2rem;
+    margin: .3rem 0 1.3rem;
+}
+
+// BreadCrumb
+.breadcrumb{
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    font-size: .95rem;
+}
+
 // Articles
-.articles-container{
-    .article-card{
-        color: $body-color;
-        text-decoration: none!important;
-        height: calc(100% - 1rem);
-        margin-bottom: 1rem;
-        display: block;
-        .card{
-            height: 100%;
-            padding-bottom: 1.25rem;
-            background-color: $white;
-            box-shadow: 0 0 4px rgba($color: $black, $alpha: 0.15);
-            .card-body{
-                position: relative;
-                .card-actions{
-                    display: flex;
-                    justify-content: flex-end;
-                    align-items: center;
-                    margin: 0 -0.5rem;
-                    a{
-                        display: block;
-                        margin: 0 .5rem;
-                        color: var(--secondary);
-                        cursor: pointer;
-                        &:hover{
-                            color: var(--primary);
-                        }
-                    }
-                }
-                .card-title{
-                    font-size: 1.2rem;
-                    font-weight: bold;
+.article-card{
+    color: $body-color;
+    text-decoration: none!important;
+    height: calc(100% - 1rem);
+    margin-bottom: 1rem;
+    display: block;
+    .card{
+        height: 100%;
+        padding-bottom: 1.25rem;
+        background-color: $white;
+        box-shadow: 0 0 4px rgba($color: $black, $alpha: 0.15);
+        .card-body{
+            position: relative;
+            .card-actions{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin: 0 -0.5rem;
+                a{
+                    display: block;
+                    margin: 0 .5rem;
+                    color: var(--secondary);
                     cursor: pointer;
-                    a{
-                        color: $body-color;
-                        text-decoration: none!important;
+                    &:hover{
+                        color: var(--primary);
                     }
-                }
-                .card-categories{
-                    background-color: #e3e3e3;
-                    display: inline-block;
-                    padding: .2rem .5rem;
-                    border-radius: 5px;
-                    font-size: .8rem;
-                    color: #464646;
-                    margin-bottom: 1rem;
-                }
-                .card-text{
-                    color: #65686e;
-                    font-size: .9rem;
-                }
-                .card-date{
-                    color: #707070;
-                    font-size: .85rem;
-                    font-weight: bold;
-                    position: absolute;
-                    bottom: 0;
                 }
             }
+            .card-title{
+                font-size: 1.2rem;
+                font-weight: bold;
+                cursor: pointer;
+                a{
+                    color: $body-color;
+                    text-decoration: none!important;
+                }
+            }
+            .card-categories{
+                background-color: #e3e3e3;
+                display: inline-block;
+                padding: .2rem .5rem;
+                border-radius: 5px;
+                font-size: .8rem;
+                color: #464646;
+                margin-bottom: 1rem;
+            }
+            .card-text{
+                color: #65686e;
+                font-size: .9rem;
+            }
+            .card-date{
+                color: #707070;
+                font-size: .85rem;
+                font-weight: bold;
+                position: absolute;
+                bottom: 0;
+            }
         }
-        
+    }
+    
+    img{
+        height: 150px;
+        object-fit: cover;
+    }
+}
+
+
+// Article Details
+#article-details{
+    padding-bottom: 0!important;
+    .card{
+        padding-bottom: 0;
         img{
-            height: 150px;
-            object-fit: cover;
+            height: 350px;
+        }
+    }
+    .card-categories{
+        background-color: transparent!important;
+        padding: 0!important;
+        font-size: 1rem;
+        text-transform: capitalize;
+        margin-bottom: 0;
+    }
+    .card-title-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .card-title{
+            cursor: initial;
+        }
+        .card-actions{
+            white-space: nowrap;
         }
     }
 }
