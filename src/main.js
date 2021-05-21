@@ -14,7 +14,7 @@ Vue.use(BootstrapVue)
 Vue.use(BootstrapVueIcons)
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCog, faSearch, faArrowRight, faCheck, faShareAlt, faAngleLeft, faAngleRight, faSort} from '@fortawesome/free-solid-svg-icons'
+import { faCog, faSearch, faArrowRight, faCheck, faShareAlt, faAngleLeft, faAngleRight, faSort } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faFacebook, faLinkedin, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faBell, faCalendar, faHeart } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'

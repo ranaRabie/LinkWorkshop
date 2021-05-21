@@ -27,7 +27,7 @@
             class="d-block img-fluid w-100"
             width="1024"
             height="480"
-            src="../assets/slide-1.jpg"
+            src="@/assets/slide-1.jpg"
             alt="image slot"
           >
         </template>
@@ -38,7 +38,7 @@
             class="d-block img-fluid w-100"
             width="1024"
             height="480"
-            src="../assets/slide-4.jpg"
+            src="@/assets/slide-4.jpg"
             alt="image slot"
           >
         </template>
@@ -49,7 +49,7 @@
             class="d-block img-fluid w-100"
             width="1024"
             height="480"
-            src="../assets/slide-3.jpg"
+            src="@/assets/slide-3.jpg"
             alt="image slot"
           >
         </template>

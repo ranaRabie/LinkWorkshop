@@ -476,6 +476,73 @@ $theme-colors:(
     font-size: .95rem;
 }
 
+// How We Helped
+#how-we-help{
+    background: url(assets/slide-1.jpg) no-repeat 50% 50%;
+    position: relative;
+    color: $white;
+    text-align: center;
+    padding: 3rem 0;
+    &::before{
+        content: '';
+        background-color: rgba($color: $black, $alpha: 0.5);
+        position: absolute;
+        top:0;left:0;width:100%;height:100%;
+    }
+    h3, p{
+        position: relative;
+    }
+    h3{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .services-container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        .service-item{
+            position: relative;
+            width: 130px;
+            height: 130px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:nth-child(odd){
+                margin-right: -20px;
+                margin-left: -20px;
+            }
+            &:nth-child(even){
+                margin-top: 95px;
+            }
+            &::before{
+                content: '';
+                background-color: transparent;
+                position: absolute;
+                top:0;left:0;width:100%;height:100%;
+                border: 2px solid $white;
+                transform: rotate(45deg);
+            }
+            svg{
+                height: 35px;
+                width: auto;
+            }
+            .service-name{
+                margin-bottom: 1.3rem;
+                margin-top: .3rem;
+                font-weight: 500;
+            }
+            .service-plus-ico{
+                font-size: 1.15rem;
+                position: relative;
+                top: .8rem;
+            }
+        }
+    }
+}
+
 // Articles
 .article-card{
     color: $body-color;
