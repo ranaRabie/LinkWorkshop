@@ -21,7 +21,7 @@
                     <div class="col-md-4">
                         <h6 class="footer-tit">Subscribe to Newsletter</h6>
                         <div id="footer-form">
-                            <form action="">
+                            <form action="" class="form-attached-btn">
                                 <input type="text" class="form-control">
                                 <button class="btn btn-secondary btn-sm text-white">Subscribe</button>
                             </form>

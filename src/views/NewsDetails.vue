@@ -18,7 +18,7 @@
 
 <script>
 // @ is an alias to /src
-import ArticleDetails from '@/components/ArticleDetails.vue'
+import ArticleDetails from '@/components/News/ArticleDetails.vue'
 export default {
   name: 'newsDetails',
   components: {

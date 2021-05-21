@@ -11,9 +11,9 @@
 
 <script>
 // @ is an alias to /src
-import Header from '@/components/Header.vue'
-import Footer from '@/components/Footer.vue'
-import SideNav from '@/components/SideNav.vue'
+import Header from '@/components/Layout/Header.vue'
+import Footer from '@/components/Layout/Footer.vue'
+import SideNav from '@/components/Layout/SideNav.vue'
 
 export default {
   name: 'Home',

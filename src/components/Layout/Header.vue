@@ -8,7 +8,7 @@
                     <span></span>
                 </a>
                 <b-navbar-brand>
-                    <img alt="Vue logo" src="../assets/logo.png">
+                    <img alt="Vue logo" src="@/assets/logo.png">
                 </b-navbar-brand>
 
                 <!-- <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -40,7 +40,7 @@
                     </b-nav-item-dropdown>
 
                     <li id="header-user">
-                        <img src="../assets/user.png" alt="">
+                        <img src="@/assets/user.png" alt="">
                         <span>user name</span>
                     </li>
 

@@ -384,24 +384,6 @@ $theme-colors:(
                 font-size: 1.2rem;
             }
         }
-        #footer-form{
-            form{
-                display: flex;
-            }
-            .form-control{
-                border-top-right-radius: 0;
-                border-bottom-right-radius: 0;
-                outline: none;
-                box-shadow: none!important;
-                &:focus{
-                    border-color: var(--secondary);
-                }
-            }
-            .btn{
-                border-top-left-radius: 0;
-                border-bottom-left-radius: 0;
-            }
-        }
     }
     
 }
@@ -587,6 +569,42 @@ $theme-colors:(
         }
         .card-actions{
             white-space: nowrap;
+        }
+    }
+}
+
+// Forms
+.form-attached-btn{
+    display: flex;
+    .form-control{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        outline: none;
+        box-shadow: none!important;
+        &:focus{
+            border-color: var(--secondary);
+        }
+    }
+    .btn{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
+// Paging
+.paging-container{
+    .pagination{
+        justify-content: center;
+        .page-item{
+            .page-link{
+                margin: 0 .5rem;
+                border-radius: 5px;
+                color: $body-color;
+                &.active{
+                    background-color: var(--secondary);
+                    color: $white;
+                }
+            }
         }
     }
 }
