@@ -462,7 +462,7 @@ $theme-colors:(
 }
 
 // Page Title
-#pg-tit{
+#pg-tit, #related-topics h3{
     font-weight: bold;
     font-size: 2rem;
     margin: .3rem 0 1.3rem;
@@ -569,6 +569,78 @@ $theme-colors:(
         }
         .card-actions{
             white-space: nowrap;
+        }
+    }
+}
+
+// Related Articles
+#related-topics{
+    a{
+        text-decoration: none!important;
+        color: var(--secondary);
+        cursor: pointer;
+        display: block;
+        font-size: .85rem;
+        &:hover{
+            color: var(--primary);
+        }
+        svg{
+            margin-left: .2rem;
+        }
+    }
+    > a{
+        margin-top: 1rem;
+        svg{
+            position: relative;
+            top: 2px;
+            margin-left: .4rem;
+        }
+    }
+    .related-card{
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+        min-height: 350px;
+        display: flex;
+        align-items: flex-end;
+        .related-bg{
+            position: absolute;
+            top: 0;
+            left:0;
+            width:100%;
+            height: 100%;
+            &:before{
+                content:'';
+                position: absolute;
+                top:0;
+                left:0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba($color: $black, $alpha: 0.35);
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .related-body{
+            position: relative;
+            background-color: rgba($color: $white, $alpha: 0.85);
+            width: 100%;
+            margin: .5rem;
+            padding: .5rem 1rem;
+            border-radius: 5px;
+            font-size: .85rem;
+            .related-category{
+                color: #2f2e2f;
+            }
+            .related-title{
+                font-size: 1.4rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
         }
     }
 }

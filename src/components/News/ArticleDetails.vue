@@ -1,5 +1,5 @@
 <template>
-    
+    <div>
         <article id="article-details" class="article-card">
             <b-card
             :img-src="articleImg"
@@ -28,10 +28,14 @@
 
           </b-card>
         </article>
+        <related-articles />
+    </div>
 </template>
 
 <script>
+import RelatedArticles from './RelatedArticles.vue'
 export default {
+  components: { RelatedArticles },
   name: 'ArticleDetails',
   props: {
     articleImg: String,
