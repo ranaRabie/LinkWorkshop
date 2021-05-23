@@ -6,14 +6,19 @@
 
           <div class="services-container">
 
-              <!-- <div class="service-item" v-for="(service, index) in services" :key="index">
+              <div class="service-item" v-for="(service, index) in services" :key="index">
                   <div >
-                      <span class="d-none">{{appIcon(service.icon)}}</span>
-                        <div><font-awesome-icon :icon="iconNow" /></div>
+                        <div v-if="service.iconId === 0"><font-awesome-icon icon="map-marked-alt" /></div>
+                        <div v-else-if="service.iconId === 1"><font-awesome-icon icon="child" /></div>
+                        <div v-else-if="service.iconId === 2"><font-awesome-icon icon="eye" /></div>
+                        <div v-else-if="service.iconId === 3"><font-awesome-icon icon="mobile-alt" /></div>
+                        <div v-else-if="service.iconId === 4"><font-awesome-icon icon="info" /></div>
+                        <div v-else-if="service.iconId === 5"><font-awesome-icon icon="hand-holding-medical" /></div>
+                        <div v-else><font-awesome-icon icon="hourglass-half" /></div>
                         <div class="service-name">{{service.name}}</div>
                         <div class="service-plus-ico">+</div>
                   </div>
-              </div> -->
+              </div>
 
           </div>
       </div>
@@ -30,21 +35,21 @@ export default {
     data(){
         return {
             iconNow: '',
-            // services:[
-            //     {icon: faMapMarkedAlt, name: 'Find Place'},
-            //     {icon: faChild, name: 'Tofoula'},
-            //     {icon: faEye, name: 'Aa\'wen'},
-            //     {icon: faMobileAlt, name: 'Fundraising'},
-            //     {icon: faInfo, name: 'Omniyat'},
-            //     {icon: faHandHoldingMedical, name: 'Zakat'},
-            //     {icon: faHourglassHalf, name: 'Give Time'},
-            // ]
+            services:[
+                {iconId: 0, name: 'Find Place'},
+                {iconId: 1, name: 'Tofoula'},
+                {iconId: 2, name: 'Aa\'wen'},
+                {iconId: 3, name: 'Fundraising'},
+                {iconId: 4, name: 'Omniyat'},
+                {iconId: 5, name: 'Zakat'},
+                {iconId: 6, name: 'Give Time'},
+            ]
         }
     },
-    methods: {
-        appIcon (ico) {
-            this.iconNow = ico;
-        }
-    }
+    // methods: {
+    //     appIcon (ico) {
+    //         this.iconNow = ico;
+    //     }
+    // }
 }
 </script>

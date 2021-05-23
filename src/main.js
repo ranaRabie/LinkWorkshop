@@ -14,12 +14,12 @@ Vue.use(BootstrapVue)
 Vue.use(BootstrapVueIcons)
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCog, faSearch, faArrowRight, faCheck, faShareAlt, faAngleLeft, faAngleRight, faSort } from '@fortawesome/free-solid-svg-icons'
+import { faCog, faSearch, faArrowRight, faCheck, faShareAlt, faAngleLeft, faAngleRight, faSort, faMapMarkedAlt, faChild, faEye, faMobileAlt, faInfo, faHandHoldingMedical, faHourglassHalf } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faFacebook, faLinkedin, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faBell, faCalendar, faHeart } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faCog, faBell, faSearch, faArrowRight, faCheck, faCalendar, faHeart, faShareAlt, faAngleLeft, faAngleRight, faSort, faTwitter, faFacebook, faLinkedin, faYoutube, faInstagram)
+library.add(faCog, faBell, faSearch, faArrowRight, faCheck, faCalendar, faHeart, faShareAlt, faAngleLeft, faAngleRight, faSort, faMapMarkedAlt, faChild, faEye, faMobileAlt, faInfo, faHandHoldingMedical, faHourglassHalf, faTwitter, faFacebook, faLinkedin, faYoutube, faInstagram)
 
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
