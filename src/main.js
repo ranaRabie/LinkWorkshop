@@ -29,8 +29,10 @@ Vue.config.productionTip = false
 Vue.mixin({
   methods: {
     returnArticleDate: function (dateTime) {
-      dateTime = dateTime.split('T');
-      return dateTime[0];
+      const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri"];
+      const date = new Date(dateTime);
+      return `${days[date.getDay()]} ${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
     },
     returnArticleCategoryName(catId, categories){
       let categoryObj =  categories.find((category) => category.id === catId);  
