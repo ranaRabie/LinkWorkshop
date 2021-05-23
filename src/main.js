@@ -26,7 +26,21 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
 
+Vue.mixin({
+  methods: {
+    returnArticleDate: function (dateTime) {
+      dateTime = dateTime.split('T');
+      return dateTime[0];
+    },
+    returnArticleCategoryName(catId, categories){
+      let categoryObj =  categories.find((category) => category.id === catId);  
+      return categoryObj.name;
+    },
+  }
+})
+
 new Vue({
+  myOption: 'hello!',
   router,
   store,
   render: h => h(App)

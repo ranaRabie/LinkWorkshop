@@ -48,14 +48,8 @@ export default {
     this.axios.get('/newsapi.json').then((response) => {
         this.articleDetails = response.data.articles.find((article) => parseInt(article.id) === parseInt(this.$route.params.id));
         this.categories = response.data.sourceCategory;
-        this.articleDetails.category = this.returnCategoryName(this.articleDetails.sourceID);
+        this.articleDetails.category = this.returnArticleCategoryName(this.articleDetails.sourceID, this.categories);
     })    
-  },
-  methods: {
-      returnCategoryName(catId){
-          let categoryObj =  this.categories.find((category) => category.id === catId);  
-          return categoryObj.name;
-      },
   }
   
 }

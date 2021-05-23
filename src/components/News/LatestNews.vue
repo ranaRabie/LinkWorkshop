@@ -41,18 +41,12 @@ export default {
         this.articles = response.data.articles.filter((article) => article.showOnHomepage === true);
         this.categories = response.data.sourceCategory;
         this.articles.forEach(article => {
-            let catName = this.returnCategoryName(article.sourceID);
+            let catName = this.returnArticleCategoryName(article.sourceID, this.categories);
             article.category = catName;
         });
         
     })
     
-  },
-  methods: {
-      returnCategoryName(catId){
-          let categoryObj =  this.categories.find((category) => category.id === catId);  
-          return categoryObj.name;
-      },
   }
 }
 </script>

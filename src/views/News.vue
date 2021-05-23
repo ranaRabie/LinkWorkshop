@@ -50,7 +50,7 @@
                         :articleTitle="article.title"
                         :articleCategory="article.category"
                         :articleDescription="article.description"
-                        :articleDate="article.publishedAt"
+                        :articleDate="article.date"
                         :articleRoute="article.id"
                     />
                 </div>
@@ -122,14 +122,10 @@ export default {
                 this.posts = this.articles;
                 this.categories = response.data.sourceCategory;
                 this.posts.forEach(article => {
-                    let catName = this.returnCategoryName(article.sourceID);
-                    article.category = catName;
+                    article.category = this.returnArticleCategoryName(article.sourceID, this.categories);
+                    article.date = this.returnArticleDate(article.publishedAt);
                 });
             });
-        },
-        returnCategoryName(catId){
-            let categoryObj =  this.categories.find((category) => category.id === catId);  
-            return categoryObj.name;
         },
         sortArticles(){
             this.articles = this.articles.sort((a,b) => new Date(b.publishedAt) - new Date(a.publishedAt));
