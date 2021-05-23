@@ -7,19 +7,19 @@
             <h1 id="pg-tit">News</h1>
             <div class="filter-container mb-3">
                 <div class="row align-items-end">
-                    <div class="col-md-2">
+                    <div class="col-6 col-md-2">
                         <div class="form-group">
                             <label for="article-start-date">From</label>
                             <input type="date" v-model="filterStartDate" @change="filterArticles" placeholder="Select" id="article-start-date" class="form-control">
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-6 col-md-2">
                         <div class="form-group">
                             <label for="article-end-date">To</label>
                             <input type="date" v-model="filterEndDate" @change="filterArticles" id="article-end-date" class="form-control">
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-6 col-md-2">
                         <div class="form-group">
                             <label for="article-categories">Category</label>
                             <select @change="filterArticles()" v-model="filterCategory" id="article-categories" class="form-control">
@@ -28,7 +28,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-4 col-lg-5">
+                    <div class="col-6 col-md-4 col-lg-5">
                         <div class="form-group form-attached-btn">
                             <input type="text" @change="filterArticles()" placeholder="Search by Title" v-model="filterTitle" id="article-title" class="form-control">  
                             <button @click="filterArticles()" class="btn btn-secondary text-white"><font-awesome-icon icon="search" /></button>

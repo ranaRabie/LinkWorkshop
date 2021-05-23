@@ -2,15 +2,16 @@
     <header id="main-header">
         <b-navbar toggleable="lg" type="dark" variant="primary">
             <div class="container">
-                <a id="toggleSide" v-on:click="toggleSideNav()" v-bind:class="[isShowNav ? 'hide-nav' : 'show-nav']">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </a>
-                <b-navbar-brand>
-                    <img alt="Vue logo" src="@/assets/logo.png">
-                </b-navbar-brand>
-
+                <div class="header-brand-container">
+                    <a id="toggleSide" v-on:click="toggleSideNav()" v-bind:class="[isShowNav ? 'hide-nav' : 'show-nav']">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <b-navbar-brand>
+                        <img alt="Vue logo" src="@/assets/logo.png">
+                    </b-navbar-brand>
+                </div>
                 <!-- <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
                 <b-collapse id="nav-collapse" is-nav>
@@ -23,7 +24,7 @@
                     <b-nav-form id="header-search">
                         <div v-bind:class="{ 'show-search': isShowSearch }">
                             <b-form-input size="sm" v-show="isShowSearch" class="mr-sm-2" placeholder="Search"></b-form-input>
-                            <b-button v-on:click="isShowSearch = !isShowSearch" size="sm" class="my-2 my-sm-0" type="button" v-b-tooltip.hover title="search"><span class="header-ico"><font-awesome-icon icon="search" /></span></b-button>
+                            <b-button v-on:click="isShowSearch = !isShowSearch" size="sm" class="" type="button" v-b-tooltip.hover title="search"><span class="header-ico"><font-awesome-icon icon="search" /></span></b-button>
                         </div>
                     </b-nav-form>
 

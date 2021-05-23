@@ -3,7 +3,7 @@
         <section id="footer-wrap">
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="col-md-2">
+                    <div class="col-6 col-md-2">
                         <ul class="list-unstyled">
                             <li><router-link to="/news">News</router-link></li>
                             <li><router-link to="#">Events</router-link></li>
@@ -11,14 +11,14 @@
                             <li><router-link to="#">Faqs</router-link></li>
                         </ul>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-6 col-md-2">
                         <ul class="list-unstyled">
                             <li><router-link to="#">Privacy Policy</router-link></li>
                             <li><router-link to="#">Contact Us</router-link></li>
                             <li><router-link to="#">Complains</router-link></li>
                         </ul>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 my-3 my-md-0">
                         <h6 class="footer-tit">Subscribe to Newsletter</h6>
                         <div id="footer-form">
                             <form action="" class="form-attached-btn">
